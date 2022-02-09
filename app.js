@@ -31,8 +31,8 @@ submitBtn.addEventListener('click', () => {
 const apiKey = '376ff0455bfc121f469ebd31c435463d';
 
 async function getData(location) {
-    const celciusUrl = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`);
-    const kelvinUrl = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`);
+    const celciusUrl = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`);
+    const kelvinUrl = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`);
 
     celciusRes = await celciusUrl.json();
     kelvinRes = await kelvinUrl.json();
